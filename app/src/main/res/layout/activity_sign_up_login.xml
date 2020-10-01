@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    tools:context=".activity.SignUpLoginActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="134" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="sign in"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+
+    <EditText
+        android:id="@+id/user_name_ET"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="67"
+        android:background="@drawable/edit_text_background"
+        android:drawableStart="@drawable/icon_person"
+        android:drawablePadding="12dp"
+        android:hint="user name"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20" />
+
+
+        <EditText
+            android:id="@+id/email_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="67"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/icon_email"
+            android:drawablePadding="12dp"
+            android:hint="email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20" />
+
+        <EditText
+            android:id="@+id/password_ET"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="67"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/icon_lock"
+            android:drawablePadding="12dp"
+            android:hint="password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14" />
+
+        <LinearLayout
+            android:id="@+id/alreadyHaveAccountLy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="already_have_account?"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/logIn_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="log in"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="48" />
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/darker_gray"
+            android:text="sing up"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="34" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal">-->
+
+
+    <!--        <View-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="1dp"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:layout_marginEnd="20dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/greyDark" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/or_login_tv"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:fontFamily="@font/assistant_semibold"-->
+    <!--            android:text="@string/log_in"-->
+    <!--            android:textColor="@android:color/black"-->
+    <!--            android:textSize="@dimen/text_size_medium" />-->
+
+    <!--        <View-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="1dp"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:layout_marginStart="20dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@color/greyDark" />-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="16" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/facebook_btn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/button_height_big"-->
+    <!--        android:background="@color/grey"-->
+    <!--        android:text="@string/facebook"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textSize="@dimen/text_size_big" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="17" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/gmail_btn"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/button_height_big"-->
+    <!--        android:background="@color/grey"-->
+    <!--        android:text="@string/gmail"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textSize="@dimen/text_size_big" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="35" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/skip_TV"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center_horizontal"-->
+    <!--        android:fontFamily="@font/assistant_semibold"-->
+    <!--        android:text="@string/skip"-->
+    <!--        android:textColor="@color/marine"-->
+    <!--        android:textSize="@dimen/text_size_big" />-->
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="91" />-->
+
+
+</LinearLayout>
