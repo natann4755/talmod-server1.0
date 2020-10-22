@@ -18,8 +18,8 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         setLanguage();
-        startNextActivity();
-//        moveToSignUp();
+//        startNextActivity();
+        moveToSignUp();
     }
 
     private void moveToSignUp() {

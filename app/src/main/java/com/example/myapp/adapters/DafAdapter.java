@@ -281,13 +281,26 @@ public class DafAdapter extends RecyclerView.Adapter<DafAdapter.ViewHolder> {
                 inCancelingStudyCancelChazara();
                 AppDataBase.getInstance(activity).daoLearning().updateIsLearning(ifLearn.isChecked(),mDaf.getIndexTypeOfStudy() ,mDaf.getMasechet(),mDaf.getPageNumber());
                 updateListIfLearning(ifLearn.isChecked());
-                setSummaryLearning(currentTabString,myListDafToDisplay);
+                updateSummaryLearning();
             });
 
             chazara1.setOnClickListener(v -> chazaraClickListener(chazara1, 1));
             chazara2.setOnClickListener(v -> chazaraClickListener(chazara2, 2));
             chazara3.setOnClickListener(v -> chazaraClickListener(chazara3, 3));
         }
+
+        private void updateSummaryLearning() {
+            switch(currentTabString) {
+                case R.string.all:
+                case R.string.learned:
+                    setSummaryLearning(currentTabString,myListALLDaf);
+                    break;
+                case R.string.skipped:
+                    setSummaryLearning(currentTabString,myListDafToDisplay);
+                    break;
+            }
+        }
+
 
         private void chazaraClickListener(CheckBox chazara, int indexChazara) {
             if (chazara.isChecked()) {
