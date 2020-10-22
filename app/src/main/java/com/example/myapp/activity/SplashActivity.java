@@ -19,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         setLanguage();
         startNextActivity();
-        moveToSignUp();
+//        moveToSignUp();
     }
 
     private void moveToSignUp() {

@@ -128,7 +128,7 @@ public class DafAdapter extends RecyclerView.Adapter<DafAdapter.ViewHolder> {
                 break;
             case R.string.skipped:
                 mListener.initSummaryLearning(getNameLearning(mList),
-                        String.format(Locale.getDefault(),"%d %s", +mList.size(), activity.getString(R.string.pages_to_complete)),
+                        String.format(Locale.getDefault(),"%d %s", + calculateHowMuchSkipped(mList), activity.getString(R.string.pages_to_complete)),
                         "");
                 break;
         }
@@ -139,6 +139,16 @@ public class DafAdapter extends RecyclerView.Adapter<DafAdapter.ViewHolder> {
         for (Daf daf: mList) {
             if (daf.isLearning()){
                 learned++;
+            }
+        }
+        return learned;
+    }
+
+    private int calculateHowMuchSkipped(ArrayList<Daf> mList) {
+        int learned = mList.size();
+        for (Daf daf: mList) {
+            if (daf.isLearning()){
+                learned--;
             }
         }
         return learned;
